@@ -10,6 +10,8 @@ function addItem(producto) {
 
 function deleteLastItem() {
     lista.pop()
+    console.log("se elimino el ultimo item con exito")
+    alert("se elimino el ultimo item con exito")
 }
 
 function showArray() {
