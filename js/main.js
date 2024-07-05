@@ -1,4 +1,4 @@
-//
+//Jonathan Monti >>> Pre-entrega1
 let item
 let continuar = true
 const lista = []
