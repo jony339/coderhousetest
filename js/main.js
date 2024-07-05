@@ -37,6 +37,7 @@ while (continuar) {
         case 3:
             console.log("<============>")
             deleteLastItem()
+            showArray()
             break
         case 4:
             console.log("<============>")
