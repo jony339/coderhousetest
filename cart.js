@@ -12,9 +12,16 @@ function renderCarrito(cartItems) {
     //cartContainer.innerHTML = "";
     cartItems.forEach(producto => {
         totalGeneral += producto.precio //voy sumando los montos para saber el total de los items
-        if (cartProducts[producto.id]) {
+        /* if (cartProducts[producto.id]) {
             console.log('EL Item ya estaba', producto.id)
             cartProducts[producto.id].cantidad += producto.cantidad;
+        } else {
+            console.log('EL Item NO estaba', producto.id)
+            cartProducts.push(producto)
+        } */
+        const item = cartProducts.find(item => item.id === producto.id)
+        if (item) {
+            item.cantidad += producto.cantidad; // modifico el valor 
         } else {
             console.log('EL Item NO estaba', producto.id)
             cartProducts.push(producto)
