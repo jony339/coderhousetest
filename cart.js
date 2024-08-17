@@ -59,6 +59,7 @@ function deleteItem(storage) {
             localStorage.setItem("cartProducts", JSON.stringify(selectedProduct))
 
             renderCarrito(selectedProduct)
+            Swal.fire("SweetAlert2 is working!");
         }
     })
 }
